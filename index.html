@@ -13,14 +13,14 @@
 <body>
     <div id="banner">
         <div id="nav-bar">
-            <img id="logo" src="https://nuuk-e3eaa.firebaseapp.com/assets/img/logo-white.png" alt="Nuuk-Logo">
-            <a href="#">Home</a>
+            <img class="nuuk-logo" src="https://nuuk-e3eaa.firebaseapp.com/assets/img/logo-white.png" alt="Nuuk-Logo">
+            <a href="#" id="active">Home</a>
             <a href="#">Projects</a>
             <a href="#">About</a>
             <a href="#">Services</a>
             <a href="#">Blog</a>
             <div id="dropdown">
-                <span>Pages</span>
+                <span id="dropdown-nav">Pages</span>
                 <i class="fas fa-caret-down"></i></div>
             <span id="popup-button-1">Get Free Quote</span>
         </div>
@@ -251,10 +251,166 @@
 
         <!-- Testimonials -->
         <div id="testimonials">
-            <h1>Testimonials</h1>
+            <div id="testimonials-content">
+                <div class="section-top-title">TESTIMONIALS</div>
+                <div class="section-background-title">CLIENTS</div>
+                <p class="paragraph-content">Aenean ut eros et nisl sagittis vestibulum. Fusce neque. Praesent blandit
+                    laoreet nibh. Morbi mollis tellus ac sapien.</p>
+                <a href="" class="section-button">OUR SERVICES</a>
+            </div>
+            <div class="client-card-wrapper">
+                <div class="client-profile-wrapper">
+                    <h1>SARA WILLIAM</h1>
+                    <h2>CEO at Webflow</h2>
+                    <p> "Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae
+                        erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet" </p>
+                    <div class="orange-circle">
+                        <i class="fas fa-grip-lines-vertical"></i>
+                    </div>
+                </div>
+                <div class="client-profile-wrapper">
+                    <h1>JOHN JUNIOR</h1>
+                    <h2>Menager at Complexx</h2>
+                    <p> "Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Cras varius. Etiam sit amet
+                        orci eget eros faucibus tincidunt. Fusce a quam" </p>
+                    <div class="orange-circle">
+                        <i class="fas fa-grip-lines-vertical"></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="client-card-wrapper client-wrapper-2">
+                <div class="client-profile-wrapper">
+                    <h1>RAVEN DURGAN</h1>
+                    <h2>Architect at Group</h2>
+                    <p> ""Aliquam eu nunc. Cras dapibus. Vestibulum turpis sem, aliquet eget, lobortis pellentesque,
+                        rutrum eu, nisl"" </p>
+                        
+                        <div class="orange-circle">
+                            <i class="fas fa-grip-lines-vertical"></i>
+                        </div>
+                </div>
+                <div class="client-profile-wrapper">
+                    <h1>SAMI TYPO</h1>
+                    <h2>SEO at Balfin</h2>
+                    <p> "Vestibulum fringilla pede sit amet augue. Morbi ac felis. Ut a nisl id ante tempus hendrerit"
+                    </p>
+                    <div class="orange-circle">
+                        <i class="fas fa-grip-lines-vertical"></i>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <footer></footer>
+
+
+
+    <!-- Section-4--Blog -->
+
+    <div id="blog">
+        <div id="blog-title">
+            <p class="section-background-title">BLOG</p>
+            <p class="section-top-title">LATEST NEWS</p>
+            <a href="#" class="section-button">VIEW BLOG</a>
+        </div>
+        <!-- Service Items -->
+        <div id="blog-card">
+            <div class="blog-wrapper">
+                <div class="image-card">
+                    <img src="https://nuuk-e3eaa.firebaseapp.com/assets/img/port-1.jpg" alt="post-1">
+                </div>
+                <div class="content-card">
+                    <h2> BLOGPOST 1</h2>
+                    <p class="paragraph-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                        varius
+                        enim in eros elementum tristique.</p>
+                    <span class="section-button">LEARN MORE</span>
+                </div>
+            </div>
+            <div class="blog-wrapper">
+                <div class="image-card">
+                    <img src="https://nuuk-e3eaa.firebaseapp.com/assets/img/port-2.jpg" alt="post-2">
+                </div>
+                <div class="content-card">
+                    <h2>BLOGPOST 2</h2>
+                    <p class="paragraph-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                        varius
+                        enim in eros elementum tristique.</p>
+                    <span class="section-button">LEARN MORE</span>
+                </div>
+            </div>
+            <div class="blog-wrapper">
+                <div class="image-card">
+                    <img src="https://nuuk-e3eaa.firebaseapp.com/assets/img/port-3.jpg" alt="post-3">
+                </div>
+                <div class="content-card">
+                    <h2>BLOGPOST 3</h2>
+                    <p class="paragraph-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                        varius
+                        enim in eros elementum tristique.</p>
+                    <span class="section-button">LEARN MORE</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Trusted By companies -->
+        <div id="companies-logo">
+            <p>TRUSTED BY TOP COMPANIES</p>
+            <h1>LOGO 1</h1>
+            <h1>LOGO 2</h1>
+            <h1>LOGO 3</h1>
+            <h1>LOGO 4</h1>
+            <h1>LOGO 5</h1>
+        </div>
+    </div>
+    <footer>
+        <div id="footer-content">
+            <div class="info-wrapper">
+                <h1>ABOUT NUUK</h1>
+                <p>
+                    Based on collective work and shared knowledge, Nuuk aims to favor dialogue and debate, to transform
+                    individual knowledge into increased creative potential.
+                </p>
+                <a href="#" class="section-button">FIND ON MAP</a>
+            </div>
+            <div class="info-wrapper">
+                <h1>SERVICES</h1>
+                <a href="#" class="section-button">FINANCIAL RESULTS</a>
+                <a href="#" class="section-button">CONSTRUCTION</a>
+                <a href="#" class="section-button">ARCHITECTURE</a>
+                <a href="#" class="section-button">RENOVATION</a>
+
+            </div>
+            <div class="info-wrapper">
+                <h1>CONTACT US</h1>
+                <div id="phone-number">
+                    <div><i class="fas fa-phone-alt"></i></div>
+                    <div>
+                        <p>PHONE NUMBER</p>
+                        <p>1-800-506-266</p>
+                    </div>
+                </div>
+                <div id="opening-times">
+                    <div><i class="far fa-clock"></i></div>
+                    <div>
+                        <p>OPENING TIMES</p>
+                        <p>Mon - Sat 8:00 - 17:30, Sunday - Closed</p>
+                    </div>
+                </div>
+                <div id="email-details">
+                    <div><i class="far fa-envelope"></i></div>
+                    <div>
+                        <p>CONTACT</p>
+                        <p>contact@nuuk.com</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div>
+            <img class="nuuk-logo" src="https://nuuk-e3eaa.firebaseapp.com/assets/img/logo-white.png" alt="Nuuk-Logo">
+        </div>
+    </footer>
 </body>
 
 </html>
