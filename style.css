@@ -182,7 +182,7 @@ body {
 #slogon-section #top-title {
     color: #FFFFFF;
     /* color: red; */
-    font-size: 75px;
+    font-size: 4.6875rem;
     font-weight: 600;
 }
 
@@ -424,7 +424,6 @@ body {
 #about-content .section-background-title {
     top: -18%;
     left: -10%;
-    z-index: -10;
 }
 
 
@@ -507,10 +506,19 @@ body {
     cursor: pointer;
 }
 
-.project-list:hover {
+/* .project-list:hover {
     color: #000000;
     opacity: 0.4;
-}
+} */
+
+/* .project-list {
+    background-color: rgba(0, 0, 0, 0.1); transition: .2s;
+    opacity: 0.4;
+    }
+
+.project-list:hover{
+    opacity: 1;
+}     */
 
 .project-list img {
     width: 100%;
@@ -580,7 +588,6 @@ body {
 }
 
 .profile-wrapper {
-    /* border: 1px solid lightcoral; */
     position: relative;
     margin: 0px 20px;
     width: 20%;
@@ -952,13 +959,13 @@ footer {
     color: #ffffff;
 }
 
-footer .section-button{
+footer .section-button {
     color: #FFFFFF;
     margin-bottom: 10px;
     display: inline-block;
 }
 
-footer .section-button:hover{
+footer .section-button:hover {
     border-color: #FFFFFF;
 
 }
@@ -969,37 +976,37 @@ footer .section-button:hover{
     padding-left: 20px;
 }
 
-.services-link{
+.services-link {
     display: flex;
     flex-direction: column;
 }
 
 
-.info-wrapper .info-title{
+.info-wrapper .info-title {
     display: flex;
     position: relative;
     align-items: baseline;
 }
 
-.info-wrapper .horizontal-line{
+.info-wrapper .horizontal-line {
     position: absolute;
     display: inline-block;
     top: 30%;
     left: 30%;
-    width:50%;
+    width: 50%;
     border: 0.5px solid #ff6361;
 }
 
 
 
-#footer-content .info-wrapper h1{
-    font-size: 20px;   
-    font-weight: 500; 
+#footer-content .info-wrapper h1 {
+    font-size: 20px;
+    font-weight: 500;
     letter-spacing: 1px;
     margin-bottom: 40px;
 }
 
-#footer-content .info-wrapper>p{
+#footer-content .info-wrapper>p {
     font-size: 20px;
     padding-right: 60px;
     line-height: 1.6;
@@ -1025,4 +1032,263 @@ footer .section-button:hover{
     position: absolute;
     left: 0;
     bottom: 18%;
+}
+
+
+
+
+
+
+/* RESPONSIVE FOR MOBILE DEVICES */
+
+
+
+@media(max-width:480px) {
+    body {
+        margin: 0;
+        font-size: 8px;
+    }
+
+    /* banner Section */
+    #nav-bar {
+        height: 50px;
+        padding: 0;
+    }
+
+    #banner {
+        width: 100%;
+    }
+
+    .nuuk-logo {
+        height: 20px;
+        /* box-sizing: border-box; */
+        left: 0;
+        top: 0;
+    }
+
+
+    /* SERVICES */
+
+
+
+    .section-background-title {
+        display: none;
+    }
+
+    .section-top-title {
+        font-size: 20px;
+    }
+
+    /* PROJECTS */
+
+    #project-items-section {
+        box-sizing: border-box;
+        padding-left: 20px;
+    }
+
+    #team-title,
+    #projects-title,#testimonials {
+        padding: 0;
+        flex-direction: column;
+    }
+
+    #projects-title {
+        margin-left: 20px;
+    }
+
+    .project-list {
+        padding: 10px 30px 0px 10px;
+        width: 100%;
+    }
+
+    .project-list .hover-text {
+        display: none;
+    }
+
+
+    #orange-section {
+        box-sizing: border-box;
+        padding: 18px;
+        width: 100%;
+        text-align: left;
+        background-size: auto,cover;
+        background-position: 0px 0px, 50% 50%;
+        background-attachment:scroll, fixed;
+
+    }
+
+    #orange-section .section-top-title{
+        padding-right: 10px;
+        font-size: 24px;
+        line-height: 1.2;
+        margin: 10px 0px;
+    }
+
+    #orange-section .paragraph-content{
+        margin-top: 4px;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    #orange-section .section-button{
+        font-size: 12px;
+        margin: 20px 0 0 0px;
+    }
+
+
+    /* Team */
+
+    #team{
+        margin: 0px;
+        padding:2% 0 20px 20px;
+    }
+
+    #team-title .section-top-title,#testimonials .section-top-title
+    {
+        margin-top: 8px;
+        letter-spacing: 0.8px;
+        font-size: 24px;
+        line-height: 1.2;
+    }
+
+
+    #team-title .section-button,
+    #testimonials .section-button{
+        padding-top: 0;
+        letter-spacing: 0.8px;
+        margin-top: 0;
+        font-size: 12px;
+    }
+
+    .profile-wrapper{
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+
+    /* Testimonials */
+
+    #testimonials{
+        flex-direction: column;
+        padding-left: 0;
+        /* margin-right: 0;
+        margin-left: 0; */
+        padding-bottom: 50px;
+    }
+
+
+    #testimonials-content{
+        padding-left: 5px;
+        padding-right: 0px;
+        margin-right: 0;
+        align-items: center;
+
+    }
+
+    #testimonials-content .paragraph-content{
+        margin: 25px 0px 20px 0px;
+        font-size: 18px;
+        line-height: normal;
+        padding-bottom: 50px;
+    }
+
+    #testimonials-content .section-button{
+        letter-spacing: normal;
+        font-weight: 700;
+    }
+
+    .client-card-wrapper{
+        /* margin-right: auto;
+        margin-left: 30px; */
+        align-items: center;
+        width: 150%;
+    }
+
+    /* TEAM */
+
+
+    /* BLOG */
+
+
+    #blog{
+        padding-top: 0px;
+        /* padding-bottom: 1%; */
+        background-color: lightgreen;
+        /* margin-bottom: 10px; */
+        border: 1px solid red;
+    }
+
+    #blog-title{
+        flex-direction: column;
+    }
+
+    #blog-card{
+        padding-bottom: 2%;
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    #companies-logo{
+        margin-top: 5%;
+        flex-direction: column;
+        text-align: center;
+        min-height: 450px;
+        padding:0px;
+        padding-bottom: 35px;
+    }
+
+    #companies-logo h1{
+        display: block;
+        margin: 15px 0px;
+        justify-content: space-around;
+    }
+
+
+    #companies-logo p{
+        font-size: 15px;
+        margin: 0px;
+        margin-top: 15px;
+    }
+
+
+    .blog-wrapper{
+        width: 160%;
+        /* margin: 0px; */
+        margin-bottom: 20px;
+    
+    }
+
+
+
+    /* FOOTER */
+
+    footer{
+        /* margin: 0px; */
+        align-items: center;
+        width: 90%;
+
+    }
+
+    #footer-content{
+        flex-direction: column;
+        width: 250%;
+        /* padding: 0px;
+        margin: 0px; */
+    }
+
+    .info-wrapper .horizontal-line{
+        width: 30%;
+    }
+
+
+    footer .info-title h1{
+        margin: 0px;
+    }
+
+    footer .section-button{
+        font-size: 12px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
 }
