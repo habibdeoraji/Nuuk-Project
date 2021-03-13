@@ -91,27 +91,31 @@ body {
 
 #dropdown {
     position: relative;
+    display: inline-block;
     /* box-sizing: border-box; */
     /* border: 1px solid lightsalmon; */
 }
 
 #dropdown-list {
-    display: flex;
+    display: none;
     flex-direction: column;
     position: absolute;
-    top: 100%;
-    right: 7%;
-    padding: 8px 10px;
+    top: 142px;
+    left: 20%;
+    padding: 8px 4px;
+    /* width: 200px; */
+    min-width: 170px; 
+    height:150px;
     background-color: #FFFFFF;
     /* visibility: hidden; */
 
 }
 
-/* #dropdown:hover #dropdown-list{
-    visibility: visible;
-    color: green;
-    background-color: blue;
-} */
+#dropdown:hover #dropdown-list{
+    display: block;
+    /* color: green; */
+    /* background-color: blue; */
+}
 
 #nav-bar a,
 #nav-bar #dropdown {
@@ -123,7 +127,9 @@ body {
 }
 
 #dropdown-list a {
-    padding: 12px 20px;
+    display: inline-block;
+    width: 130px;
+    padding: 8px 15px;
     color: #717177;
 }
 
@@ -134,7 +140,7 @@ body {
 
 
 #nav-bar>a:hover,
-#nav-bar #dropdown-nav:hover {
+#nav-bar #dropdown:hover .dropdown-nav{
     color: #E47311;
     /* transition-duration: 2s; */
 }
@@ -881,7 +887,8 @@ body {
 .blog-wrapper .content-card {
     background-image: linear-gradient(to bottom right, #E57216, #FE645F);
     padding: 30px;
-    height: 40%;
+    padding-top: 60px;
+    /* height: 40%; */
 }
 
 
@@ -894,8 +901,10 @@ body {
 
 .image-card {
     width: 100%;
-    height: 60%;
+    height: 55%;
     cursor: pointer;
+    background-image: linear-gradient(to bottom right, #E47314, #EF6D3A);
+    
 }
 
 .image-card img {
@@ -954,6 +963,7 @@ footer {
 
 #footer-content {
     display: flex;
+    width: 90%;
     justify-content: space-around;
     padding: 40px 30px 0px 30px;
     color: #ffffff;
@@ -984,17 +994,32 @@ footer .section-button:hover {
 
 .info-wrapper .info-title {
     display: flex;
+    width: 200px;
     position: relative;
     align-items: baseline;
 }
 
-.info-wrapper .horizontal-line {
+/* .info-wrapper .horizontal-line {
     position: absolute;
     display: inline-block;
     top: 30%;
     left: 30%;
     width: 50%;
     border: 0.5px solid #ff6361;
+} */
+
+.info-title h1::after{
+    content: " ";
+    /* display:inline-flex; */
+    /* flex-direction: row; */
+    /* align-items: flex-start; */
+    justify-content: center;
+    position: absolute;
+    top: 30%;
+    left:65% ;
+    /* height: 2px; */
+    width: 80%;
+    border-top: 2px solid #a93c4a;
 }
 
 
@@ -1030,8 +1055,8 @@ footer .section-button:hover {
 
 #footer-logo {
     position: absolute;
-    left: 0;
-    bottom: 18%;
+    left: 60px;
+    bottom: 125px;
 }
 
 
@@ -1044,19 +1069,49 @@ footer .section-button:hover {
 
 
 @media(max-width:480px) {
+
+
     body {
         margin: 0;
         font-size: 8px;
+        /* background-color: yellow; */
     }
 
     /* banner Section */
     #nav-bar {
-        height: 50px;
+        height: 60px;
         padding: 0;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    #nav-bar::after{
+        content: "";
+        margin-right: 8%;
+        box-sizing: border-box;
+        height: 12px;
+        width: 24px;
+        border-top: 2.5px solid rgb(0, 0, 0);
+        border-bottom: 2.5px solid rgb(0, 0, 0);
+
+    }
+
+    #nav-bar a, #nav-bar #dropdown, #nav-bar #popup-button-1,#nav-bar #dropdown-list {
+        display: none;
+    }
+
+    #nav-bar img{
+        /* height: 50px; */
+        padding: 20px;
+        /* padding-bottom: 20px;
+        padding-left: 20px; */
     }
 
     #banner {
         width: 100%;
+        height: 65vh;
+        margin-bottom: 0px;
     }
 
     .nuuk-logo {
@@ -1066,18 +1121,132 @@ footer .section-button:hover {
         top: 0;
     }
 
+    #social-media-wrapper{
+        top: 52%;
+        bottom: 0;
+        padding: 0 4px;
+    }
+
+    #sologon-section{
+        line-height: normal;
+    }
+    #slogon-section #top-title{
+        font-size: 36px;
+        width: 80%;
+        line-height: 1;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    #slogon-section #top-paragraph {
+        font-size: 20px;
+        font-weight: 300;
+        width: 80%;
+        margin-top: 10px;
+    }
+
+    #features-wrapper{
+        display: none;
+    }
+
+
+    #popup-button-2{
+        padding: 14px 10px;
+        width: 150px;
+        font-weight: 500;
+        font-size: 12px;
+    }
 
     /* SERVICES */
 
-
-
+    #services{
+        padding-top: 50px;
+    }
     .section-background-title {
         display: none;
     }
 
-    .section-top-title {
+    #services .section-top-title {
         font-size: 20px;
+        margin: 0px;
+        line-height: normal;
+        font-size: 25px;
     }
+
+    #services .section-button{
+        font-size: 12px;
+    }
+
+
+
+
+    /* Our Specialization */
+
+#service-item{
+    flex-direction: column;
+    /* margin: 30px 0px 0px 30px; */
+    width: 90%;
+    padding-right: 0px;
+    /* background-color: yellowgreen; */
+    line-height: normal;
+}
+
+    #service-item .item-wrapper{
+        width: 90%;
+    }
+
+    #service-title{
+        flex-direction: column;
+        padding: 0px 0px 0px 30px;
+
+        align-items: flex-start;
+    }
+
+    .item-wrapper h2{
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0.8px;
+    }
+    
+
+    .item-wrapper .paragraph-content{
+        font-size: 18px;
+    }
+
+
+    #about{
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+        margin: 30px 10px 30px 10px;
+        margin-left: auto;
+        margin-right: auto;
+        /* padding-left: 30px; */
+    }
+
+    #about #image-wrapper{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 50px;
+    }
+
+    #about #about-content{
+        width: 100%;
+    }
+
+    #fun-fact{
+        flex-direction: column;
+        margin-left: 30px;
+        margin-right: 30px;
+        padding: 0px;
+    }
+
+
+    .fun-fact-wrapper{
+        width: 100%;
+        padding-right: 20px;
+    }
+
 
     /* PROJECTS */
 
@@ -1136,7 +1305,7 @@ footer .section-button:hover {
     }
 
 
-    /* Team */
+    /* TEAM */
 
     #team{
         margin: 0px;
@@ -1205,7 +1374,7 @@ footer .section-button:hover {
         width: 150%;
     }
 
-    /* TEAM */
+
 
 
     /* BLOG */
@@ -1213,10 +1382,7 @@ footer .section-button:hover {
 
     #blog{
         padding-top: 0px;
-        /* padding-bottom: 1%; */
-        background-color: lightgreen;
-        /* margin-bottom: 10px; */
-        border: 1px solid red;
+
     }
 
     #blog-title{
@@ -1244,6 +1410,17 @@ footer .section-button:hover {
         justify-content: space-around;
     }
 
+    #image-card{
+        line-height: normal;
+        box-sizing: border-box;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    #image-card img{
+        height:50%;
+    }
+
 
     #companies-logo p{
         font-size: 15px;
@@ -1267,28 +1444,93 @@ footer .section-button:hover {
         /* margin: 0px; */
         align-items: center;
         width: 90%;
+        padding-left: 30px;
+        padding-bottom: 60px;
+        /* background-color: yellowgreen; */
 
     }
 
     #footer-content{
         flex-direction: column;
-        width: 250%;
+        /* width: 250%; */
+        padding: 0px;
+        padding-top: 30px;
+        /* background-color: turquoise; */
         /* padding: 0px;
         margin: 0px; */
     }
 
-    .info-wrapper .horizontal-line{
+    #footer-content .info-wrapper {
+        width: 100%;
+        margin-top: 10px;
+        padding-left: 20px;
+    }
+
+    /* .info-wrapper .horizontal-line{
         width: 30%;
+    } */
+
+
+    #footer-content .info-wrapper h1 {
+        margin-bottom: 15px;
+        
     }
 
-
-    footer .info-title h1{
-        margin: 0px;
+    #footer-content .info-wrapper>p{
+        line-height: 1.1;
+        font-size: 18px;
     }
-
     footer .section-button{
         font-size: 12px;
         margin-bottom: 0px;
         margin-top: 0px;
+        height: 24px;
+    }
+
+    .info-title h1::after{
+        top: 48%;
+        /* right: 0%; */
+        left: 60%;
+        width: 60%;
+        border-top-width: 1px;
+    }
+
+    #footer-content>:nth-child(3) :nth-child(1){
+        font-size: 14px;
+    }
+
+    /* #phone-number>:nth-child(2) :nth-child(1){
+        margin-bottom: 0px;
+        color: red;
+    } */
+
+    #footer-content :nth-child(3):nth-child(n+1) :nth-child(1){
+        margin-bottom: 0px;
+        /* color: blue; */
+    }
+
+
+
+    #phone-number{
+        margin-top: 20px;
+    }
+
+    .details-info :nth-child(2){
+        font-size: 16px;
+        margin-top: 10px;
+        color: #919196;
+    }
+
+
+
+    #footer-logo{
+        height: 40px;
+        left: 50px;
+        bottom: 25px;
+        background-color: red;
+    }
+
+    #footer-logo .nuuk-logo{
+    padding: 16px 24px;
     }
 }
