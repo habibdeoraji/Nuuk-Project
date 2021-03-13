@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700&display=swap");
 
 body {
     margin-top: 2%;
     margin-right: 2%;
     margin-left: 2%;
-    font-family: 'Dosis', sans-serif;
+    font-family: "Dosis", sans-serif;
     color: #121213;
     line-height: 20px;
 }
@@ -13,18 +13,18 @@ body {
     position: relative;
     width: 100%;
     height: 85vh;
-    background-image: linear-gradient(76deg, rgba(193, 195, 204, 0.83) 35%, rgba(193, 195, 204, 0.28) 65%), url(https://nuuk-e3eaa.firebaseapp.com/assets/img/slide-2.jpg);
+    background-image: linear-gradient(76deg,
+            rgba(193, 195, 204, 0.83) 35%,
+            rgba(193, 195, 204, 0.28) 65%),
+        url(https://nuuk-e3eaa.firebaseapp.com/assets/img/slide-2.jpg);
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
 
-
     /* Temp */
     margin-bottom: 200px;
     background-attachment: fixed;
-
 }
-
 
 #nav-bar {
     display: flex;
@@ -41,8 +41,6 @@ body {
     font-weight: 800;
     text-transform: uppercase;
 }
-
-
 
 .nuuk-logo {
     position: absolute;
@@ -66,16 +64,12 @@ body {
     letter-spacing: 1px;
     padding: 40px 20px;
     cursor: pointer;
-
 }
 
 #popup-button-1:hover,
 #popup-button-2:hover {
     background-color: #e98a38;
 }
-
-
-
 
 #dropdown {
     margin-right: 25px;
@@ -104,12 +98,10 @@ body {
     min-width: 170px;
     height: 150px;
     background-color: #FFFFFF;
-
 }
 
 #dropdown:hover #dropdown-list {
     display: block;
-
 }
 
 #nav-bar a,
@@ -118,7 +110,6 @@ body {
     letter-spacing: 1px;
     text-decoration: none;
     color: #414146;
-
 }
 
 #dropdown-list a {
@@ -133,12 +124,10 @@ body {
     color: #e47312;
 }
 
-
 #nav-bar>a:hover,
 #nav-bar #dropdown:hover .dropdown-nav {
     color: #E47311;
 }
-
 
 #nav-bar>a:hover::before,
 #nav-bar #dropdown:hover::before,
@@ -158,11 +147,6 @@ body {
 #nav-bar #active {
     color: #E47311;
 }
-
-
-
-
-
 
 /* Slogon Section */
 #slogon-section {
@@ -184,7 +168,6 @@ body {
     margin-bottom: 40px;
 }
 
-
 #popup-button-2 {
     padding: 18px;
     width: 180px;
@@ -197,7 +180,7 @@ body {
     flex-direction: column;
     position: absolute;
     right: 0;
-    top: 44%;
+    top: 38%;
     background-color: #0B1328;
     padding: 8px 8px;
     color: #FFFFFF;
@@ -217,7 +200,6 @@ body {
 #social-media-wrapper :nth-child(4) {
     border: none;
 }
-
 
 /* Features Wrapper */
 #features-wrapper {
@@ -239,12 +221,10 @@ body {
     line-height: 1.5;
 }
 
-
 #features-wrapper>div :nth-child(1) {
     font-size: 25px;
     margin: 15px 0px;
 }
-
 
 #features-wrapper>div :nth-child(1),
 #features-wrapper>div :nth-child(2) {
@@ -274,11 +254,9 @@ body {
     letter-spacing: 1px;
 }
 
-
 .section-button:hover {
     border-bottom: 2px solid #E47311;
 }
-
 
 #features-wrapper #opening-times .section-button {
     display: inline-block;
@@ -290,7 +268,6 @@ body {
 
 #features-wrapper #opening-times .section-button:hover {
     border-color: #FFFFFF;
-
 }
 
 /* Section-2 Services */
@@ -314,7 +291,7 @@ body {
     font-size: 50px;
     line-height: 50px;
     font-weight: 600;
-    Letter-spacing: 1px
+    letter-spacing: 1px;
 }
 
 /* Section Background Title for all the top title */
@@ -323,9 +300,8 @@ body {
     font-weight: 600;
     color: rgba(241, 241, 247, 0.4);
     font-size: 140px;
-    letter-spacing: 12px
+    letter-spacing: 12px;
 }
-
 
 #service-title .section-background-title {
     position: absolute;
@@ -334,10 +310,8 @@ body {
     font-weight: 600;
     color: rgba(241, 241, 247, 0.4);
     font-size: 140px;
-    letter-spacing: 12px
+    letter-spacing: 12px;
 }
-
-
 
 /* Service Items */
 #service-item {
@@ -347,7 +321,6 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-
 
 #service-item .item-wrapper {
     width: 25%;
@@ -370,7 +343,6 @@ body {
     color: #919196;
 }
 
-
 /* About */
 #about {
     display: flex;
@@ -391,7 +363,6 @@ body {
     width: 100%;
 }
 
-
 #about-content {
     position: relative;
     width: 42%;
@@ -404,19 +375,15 @@ body {
     margin-top: 20px;
 }
 
-
-
 #about-content .section-background-title {
     top: -18%;
     left: -10%;
 }
 
-
 #about .service-item-button {
     display: inline-block;
     margin-top: 20px;
 }
-
 
 /* Fun Fact */
 #fun-fact {
@@ -446,7 +413,6 @@ body {
     font-size: 20px;
 }
 
-
 /* Section-3 Projects */
 #projects {
     position: relative;
@@ -474,7 +440,6 @@ body {
     padding-left: 120px;
 }
 
-
 /* Project - items-section */
 #project-items-section {
     display: flex;
@@ -492,9 +457,10 @@ body {
     cursor: pointer;
 }
 
-.overlay-image{
+.overlay-image {
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.3); transition: .2s;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: 0.2s;
     box-sizing: border-box;
     padding-left: 20px;
     width: 100%;
@@ -505,18 +471,15 @@ body {
     transform: translate(-50%, -50%);
 }
 
-
-
 .project-list img {
     z-index: 10;
     width: 100%;
     opacity: 1;
     display: block;
     height: auto;
-    transition: .5s ease;
+    transition: 0.5s ease;
     backface-visibility: hidden;
 }
-
 
 .hover-text {
     transition: 0.1s ease;
@@ -528,8 +491,7 @@ body {
     transform: translate(-50%, -50%);
 }
 
-
-.project-list:hover .overlay-image{
+.project-list:hover .overlay-image {
     opacity: 1;
 }
 
@@ -550,8 +512,6 @@ body {
     padding-top: 28px;
 }
 
-
-
 /* Orange Section */
 #orange-section {
     display: flex;
@@ -563,7 +523,8 @@ body {
     padding-bottom: 7%;
     color: #FFFFFF;
     background-color: #e47312;
-    background-image: linear-gradient(72deg, #e47312, rgba(255, 99, 97, 0.78)), url(https://nuuk-e3eaa.firebaseapp.com/assets/img/banner-2.jpg);
+    background-image: linear-gradient(72deg, #e47312, rgba(255, 99, 97, 0.78)),
+        url(https://nuuk-e3eaa.firebaseapp.com/assets/img/banner-2.jpg);
 
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -629,7 +590,6 @@ body {
     background-image: url(https://assets.website-files.com/5784f6d4845ba5842f136ad0/5e5ce8f8ac42944a82621657_team-1.jpg);
 }
 
-
 .image-2 {
     background-image: url(https://nuuk-e3eaa.firebaseapp.com/assets/img/team-2.jpg);
 }
@@ -638,12 +598,9 @@ body {
     background-image: url(https://nuuk-e3eaa.firebaseapp.com/assets/img/team-3.jpg);
 }
 
-
 .image-4 {
     background-image: url(https://nuuk-e3eaa.firebaseapp.com/assets/img/team-4.jpg);
 }
-
-
 
 .profile-details {
     padding: 10px 20px 10px 30px;
@@ -662,7 +619,6 @@ body {
     font-size: 20px;
 }
 
-
 /* Social- Media link */
 .social-media-link {
     display: flex;
@@ -679,7 +635,6 @@ body {
     z-index: 5;
 }
 
-
 .social-media-link .logo {
     cursor: pointer;
     padding: 20px 14px;
@@ -690,8 +645,6 @@ body {
 .social-media-link :nth-child(3) {
     border: none;
 }
-
-
 
 /* testimonials */
 #testimonials {
@@ -719,13 +672,10 @@ body {
     line-height: 1.5;
 }
 
-
 #testimonials-content .section-background-title {
     top: -15px;
     left: -10%;
 }
-
-
 
 .client-card-wrapper {
     display: flex;
@@ -741,7 +691,6 @@ body {
     height: 400px;
     margin: 10px;
 }
-
 
 .client-profile-wrapper {
     position: relative;
@@ -782,9 +731,7 @@ body {
     border-radius: 50%;
     text-align: center;
     background-image: linear-gradient(8deg, #ff6361, #e47312);
-    ;
 }
-
 
 .client-profile-wrapper .orange-circle-2 {
     left: 40%;
@@ -796,9 +743,6 @@ body {
     color: #FFFFFF;
     left: 50%;
 }
-
-
-
 
 /* Blog */
 
@@ -819,14 +763,11 @@ body {
     /* border: 1PX solid lightblue; */
 }
 
-
-
 #blog-title .section-background-title {
     position: absolute;
     top: -100px;
     left: 32px;
 }
-
 
 .blog-wrapper .section-button {
     border-bottom: 3px solid #f89881;
@@ -837,7 +778,6 @@ body {
     border-color: #FFFFFF;
 }
 
-
 #blog-card {
     display: flex;
     width: calc(100% - 200px);
@@ -846,11 +786,6 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-
-
-
-
-
 
 /* Blog  */
 
@@ -872,7 +807,6 @@ body {
     width: 90px;
     height: 120px;
 }
-
 
 .blog-date .meta-number {
     display: inline-block;
@@ -901,14 +835,11 @@ body {
     font-size: 20px;
 }
 
-
 .blog-wrapper .content-card {
     background-image: linear-gradient(to bottom right, #E57216, #FE645F);
     padding: 30px;
     padding-top: 60px;
 }
-
-
 
 .blog-wrapper h2 {
     margin-top: 0px;
@@ -921,7 +852,6 @@ body {
     height: 55%;
     cursor: pointer;
     background-image: linear-gradient(to bottom right, #E47314, #EF6D3A);
-
 }
 
 .image-card img {
@@ -944,7 +874,6 @@ body {
     text-decoration: none;
 }
 
-
 /* Companies-logo */
 
 #companies-logo {
@@ -962,11 +891,11 @@ body {
 
 /* Testing-logo image */
 
-#companies-logo img{
+#companies-logo img {
     width: 120px;
 }
 
-#companies-logo p{
+#companies-logo p {
     font-size: 20px;
     font-weight: 600;
     letter-spacing: 0.9px;
@@ -981,8 +910,6 @@ footer {
     padding-bottom: 300px;
     background-color: #0a1229;
 }
-
-
 
 /* Footer Content */
 
@@ -1002,7 +929,6 @@ footer .section-button {
 
 footer .section-button:hover {
     border-color: #FFFFFF;
-
 }
 
 #footer-content .info-wrapper {
@@ -1015,7 +941,6 @@ footer .section-button:hover {
     display: flex;
     flex-direction: column;
 }
-
 
 .info-wrapper .info-title {
     display: flex;
@@ -1033,8 +958,6 @@ footer .section-button:hover {
     width: 80%;
     border-top: 2px solid #c92d42;
 }
-
-
 
 #footer-content .info-wrapper h1 {
     font-size: 20px;
@@ -1059,11 +982,9 @@ footer .section-button:hover {
     padding-top: 0px;
 }
 
-
 #footer-content .info-wrapper>div p {
     margin-top: 0px;
 }
-
 
 #footer-logo {
     position: absolute;
@@ -1071,25 +992,22 @@ footer .section-button:hover {
     bottom: 125px;
 }
 
-
-
-
-
+.details-info :nth-child(2) {
+    font-size: 17px;
+    color: #919196;
+}
 
 /* RESPONSIVE FOR MOBILE DEVICES */
 
-@media(max-width:479px) {
-
-
+@media (max-width: 479px) {
     body {
         margin: 0;
         font-size: 8px;
     }
 
-
     /* Section-button */
 
-    .section-button{
+    .section-button {
         height: 25px;
         font-size: 12px;
     }
@@ -1111,7 +1029,6 @@ footer .section-button:hover {
         width: 24px;
         border-top: 2.5px solid rgb(0, 0, 0);
         border-bottom: 2.5px solid rgb(0, 0, 0);
-
     }
 
     #nav-bar a,
@@ -1139,7 +1056,7 @@ footer .section-button:hover {
     }
 
     #social-media-wrapper {
-        top: 52%;
+        top: 49%;
         bottom: 0;
         padding: 0 4px;
     }
@@ -1166,7 +1083,6 @@ footer .section-button:hover {
     #features-wrapper {
         display: none;
     }
-
 
     #popup-button-2 {
         padding: 14px 10px;
@@ -1195,11 +1111,11 @@ footer .section-button:hover {
         font-size: 12px;
     }
 
-    #projects-title{
+    #projects-title {
         margin-bottom: 10px;
     }
 
-    #projects-title .section-button{
+    #projects-title .section-button {
         display: inline-block;
         font-size: 12px;
         /* padding-bottom: 0px; */
@@ -1207,8 +1123,6 @@ footer .section-button:hover {
         width: fit-content;
         /* width: ; */
     }
-
-
 
     /* Our Specialization */
     #service-item {
@@ -1237,11 +1151,9 @@ footer .section-button:hover {
         letter-spacing: 0.8px;
     }
 
-
     .item-wrapper .paragraph-content {
         font-size: 18px;
     }
-
 
     #about {
         flex-direction: column;
@@ -1269,12 +1181,10 @@ footer .section-button:hover {
         padding: 0px;
     }
 
-
     .fun-fact-wrapper {
         width: 100%;
         padding-right: 20px;
     }
-
 
     /* PROJECTS */
     #project-items-section {
@@ -1294,7 +1204,7 @@ footer .section-button:hover {
         margin-bottom: 60px;
     }
 
-    #projects-title .section-top-title{
+    #projects-title .section-top-title {
         font-size: 30px;
     }
 
@@ -1305,8 +1215,7 @@ footer .section-button:hover {
         width: 90%;
     }
 
-
-    #project-items-section{
+    #project-items-section {
         padding: 0px;
     }
 
@@ -1318,7 +1227,6 @@ footer .section-button:hover {
         background-size: auto, cover;
         background-position: 0px 0px, 50% 50%;
         background-attachment: scroll, fixed;
-
     }
 
     #orange-section .section-top-title {
@@ -1339,7 +1247,6 @@ footer .section-button:hover {
         margin: 20px 0 0 0px;
     }
 
-
     /* TEAM */
     #team {
         margin: 0px;
@@ -1355,7 +1262,7 @@ footer .section-button:hover {
         line-height: 1.2;
     }
 
-    #team-title .section-top-title{
+    #team-title .section-top-title {
         margin-bottom: 10px;
     }
 
@@ -1381,7 +1288,6 @@ footer .section-button:hover {
         margin-bottom: 30px;
     }
 
-
     /* Testimonials */
 
     #testimonials {
@@ -1395,7 +1301,6 @@ footer .section-button:hover {
         margin-right: 0px; */
     }
 
-
     #testimonials-content {
         width: 140%;
         padding-left: 5px;
@@ -1404,7 +1309,6 @@ footer .section-button:hover {
         margin-right: 50px;
         margin-bottom: 50px;
         align-items: center;
-
     }
 
     #testimonials-content .paragraph-content {
@@ -1412,7 +1316,6 @@ footer .section-button:hover {
         font-size: 18px;
         line-height: normal;
         padding-bottom: 0px;
-
     }
 
     #testimonials-content .section-button {
@@ -1425,13 +1328,9 @@ footer .section-button:hover {
         width: 150%;
     }
 
-
-
-
     /* BLOG */
     #blog {
         padding-top: 0px;
-
     }
 
     #blog-title {
@@ -1441,11 +1340,10 @@ footer .section-button:hover {
         align-items: flex-start;
     }
 
-    #blog-title .section-top-title{
+    #blog-title .section-top-title {
         font-size: 30px;
         padding-bottom: 0px;
         margin-bottom: 0px;
-
     }
 
     #blog-card {
@@ -1454,7 +1352,7 @@ footer .section-button:hover {
         align-items: center;
     }
 
-    .content-card h2{
+    .content-card h2 {
         font-size: 18px;
         font-weight: 600;
         letter-spacing: 1px;
@@ -1470,13 +1368,7 @@ footer .section-button:hover {
         padding-bottom: 35px;
     }
 
-    /* #companies-logo h1 {
-        display: block;
-        margin: 15px 0px;
-        justify-content: space-around;
-    } */
-
-    #companies-logo img{
+    #companies-logo img {
         width: 90px;
         margin-top: 20px;
         margin-bottom: 20px;
@@ -1493,24 +1385,18 @@ footer .section-button:hover {
         height: 50%;
     }
 
-
     #companies-logo p {
         font-size: 15px;
         margin: 0px;
         margin-top: 15px;
     }
 
-
     .blog-wrapper {
         width: 160%;
         margin-bottom: 20px;
-
     }
 
-
-
     /* FOOTER */
-
     footer {
         align-items: center;
         box-sizing: border-box;
@@ -1532,18 +1418,14 @@ footer .section-button:hover {
         padding-left: 20px;
     }
 
-
     #footer-content .info-wrapper h1 {
         margin-bottom: 15px;
-
     }
 
     #footer-content .info-wrapper>p {
         line-height: 1.1;
         font-size: 18px;
     }
-
-
 
     footer .section-button {
         font-size: 12px;
@@ -1552,7 +1434,7 @@ footer .section-button:hover {
         height: 24px;
     }
 
-    .info-title{
+    .info-title {
         margin: 0px;
         /* color: red; */
     }
@@ -1564,36 +1446,33 @@ footer .section-button:hover {
         border-top-width: 1px;
     }
 
-    #footer-content>:nth-child(3) :nth-child(1) {
+    #footer-content> :nth-child(3) :nth-child(1) {
         font-size: 14px;
     }
 
-
-    #footer-content :nth-child(3):nth-child(n+1) :nth-child(1) {
+    #footer-content :nth-child(3):nth-child(n + 1) :nth-child(1) {
         margin-bottom: 0px;
     }
 
-
-
-    #phone-number {
-        margin-top: 20px;
-    }
-
     .details-info :nth-child(2) {
-        font-size: 16px;
+        font-size: 14px;
         margin-top: 10px;
         color: #919196;
+        /* color: red; */
     }
-    .wrapper-3{
+
+    .wrapper-3 {
         margin-bottom: 30px;
     }
 
+    #footer-content :nth-child(3):nth-child(n + 1) :nth-child(1) {
+        margin-bottom: 16px;
+    }
 
     #footer-logo {
         height: 40px;
         left: 35px;
         bottom: 12px;
-        background-color: red;
     }
 
     #footer-logo .nuuk-logo {
