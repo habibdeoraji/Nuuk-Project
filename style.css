@@ -1473,23 +1473,53 @@ footer .section-button:hover {
   #footer-logo .nuuk-logo {
     padding: 16px 24px;
   }
+
+
+
+
+/* Onlcik Functionality Side navbar CSS Responsive*/
+
+
+#mySidenav {
+  width: 100% !important;
+  position: fixed;
+  top: 0%;
+  right: 0px;
+  height: 100vh !important;
+  background-color: #fff;
+  color: #0c0101;
+  display: none;
+  font-size: 30px;
+  z-index: 30;
+ 
 }
 
-/* Onlcik Functionality Side navbar CSS */
+#sidenav-form > input,
+#sidenav-form > textarea {
+  margin-bottom: 2px !important;
+  height: 0px !important;
+  border: none;
+  font-size: 12px !important;
+  border-bottom: 1px solid #bfbfc5;
+  outline: none;
+}
+
+
+}
+
+/* Onlcik Functionality Side navbar CSS Web*/
 
 #mySidenav {
   position: fixed;
   top: 0%;
   right: 0px;
   height: 100vh;
-  background-color: #4fb668;
   background-color: #fff;
   width: 30%;
   color: #0c0101;
   display: none;
   font-size: 30px;
   z-index: 30;
-  overflow-x: hidden;
 }
 
 #mySidenav a {
@@ -1574,4 +1604,8 @@ footer .section-button:hover {
 #sidenav-form button:hover {
   background-color: #e98a38;
 }
+
+
+
+
 
