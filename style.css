@@ -1431,7 +1431,6 @@ footer .section-button:hover {
 
   .info-title {
     margin: 0px;
-    /* color: red; */
   }
 
   .info-title h1::after {
@@ -1453,7 +1452,6 @@ footer .section-button:hover {
     font-size: 14px;
     margin-top: 10px;
     color: #919196;
-    /* color: red; */
   }
 
   .wrapper-3 {
