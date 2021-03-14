@@ -9,6 +9,20 @@
       integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
       crossorigin="anonymous"
     />
+    <script>
+      function openNav() {
+        var my_side_nav = document.getElementById("mySidenav");
+        my_side_nav.style.width = "30%";
+        my_side_nav.style.display = "block";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+
+      document.getElementById("mySidenav").style.display = "none";
+    </script>
+
     <link rel="stylesheet" href="./style.css" />
     <title>Nuuk Project</title>
   </head>
@@ -29,7 +43,7 @@
         <div id="dropdown">
           <span class="dropdown-nav">Pages</span>
           <i class="fas fa-caret-down"></i>
-          
+
           <!-- Testing -->
           <div id="dropdown-list">
             <a href="#">404 error Page</a>
@@ -38,7 +52,7 @@
             <a href="#">Licensing</a>
           </div>
         </div>
-        <span id="popup-button-1">Get Free Quote</span>
+        <span id="popup-button-1" onclick="openNav()">Get Free Quote</span>
       </div>
 
       <!-- Slogon Section -->
@@ -47,7 +61,7 @@
         <p id="top-paragraph">
           We turn your ideas to reality, we don't stop until you're satisfied.
         </p>
-        <span id="popup-button-2">Get Free Quote</span>
+        <span id="popup-button-2" onclick="openNav()">Get Free Quote</span>
       </div>
 
       <!-- Social Media -->
@@ -78,6 +92,39 @@
           <div>Mon - Sat 8:00 - 17:30, Sunday - Closed</div>
           <span class="section-button">FIND ON MAP</span>
         </div>
+      </div>
+
+      <!-- Trying OnClick Functionality -->
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          ><i class="fas fa-times side-nav-times"></i
+        ></a>
+        <div id="mySidenav-title">
+          <div class="section-top-title">Get a free QUOTE</div>
+          <div class="section-background-title">QUOTE</div>
+        </div>
+        <form action="" id="sidenav-form">
+          <label for="full-name">Full Name</label> <br />
+          <input type="text" name="full-name" id="full-name" required /><br />
+          <label for="email-address">Email Address</label><br />
+          <input
+            type="email"
+            name="email-address"
+            id="email-address"
+            required
+          /><br />
+          <label for="phone-number">Phone number</label><br />
+          <input type="text" name="phone-number" id="fullName" required /><br />
+          <label for="more-information">More Information</label><br />
+          <textarea
+            name="more-information"
+            id="more-information"
+            cols="30"
+            rows="10"
+            required
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
       </div>
     </div>
 
@@ -267,7 +314,7 @@
         <div class="paragraph-content">
           Get in touch with us and send some basic info for a quick quote.
         </div>
-        <a href="#" class="section-button">GET FREE QUOTE</a>
+        <a class="section-button" onclick="openNav()">GET FREE QUOTE</a>
       </div>
 
       <!-- Team -->
